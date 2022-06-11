@@ -13,21 +13,25 @@
             <div class="top">
                 <div class="search">
                     <label for="search">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1664 1664"><path d="M1152 704q0-185-131.5-316.5T704 256T387.5 387.5T256 704t131.5 316.5T704 1152t316.5-131.5T1152 704zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124q-143 0-273.5-55.5t-225-150t-150-225T0 704t55.5-273.5t150-225t225-150T704 0t273.5 55.5t225 150t150 225T1408 704q0 220-124 399l343 343q37 37 37 90z"/></svg>
+                        <!-- Search Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1664 1640"><path d="M1152 704q0-185-131.5-316.5T704 256T387.5 387.5T256 704t131.5 316.5T704 1152t316.5-131.5T1152 704zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124q-143 0-273.5-55.5t-225-150t-150-225T0 704t55.5-273.5t150-225t225-150T704 0t273.5 55.5t225 150t150 225T1408 704q0 220-124 399l343 343q37 37 37 90z"/></svg>
                     </label>
                     <input type="text" name="search" id="search">
                 </div>
                 <div class="notif">
+                    <!-- Notification Icon -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6zM7.58 4.08L6.15 2.65C3.75 4.48 2.17 7.3 2.03 10.5h2a8.445 8.445 0 0 1 3.55-6.42zm12.39 6.42h2c-.15-3.2-1.73-6.02-4.12-7.85l-1.42 1.43a8.495 8.495 0 0 1 3.54 6.42z"/></svg>
-                    <span>user logo</span>
+                    <div class="pic"></div>
                     <span>user name</span>
                 </div>
             </div>
             <div class="bottom">
                 <div class="greeting">
-                    <span>user logo</span>
-                    <h3>Hi there,</h3>
-                    <h1>user(@username)</h1>
+                    <div class="pic"></div>
+                    <div class="user-greet">
+                        <h3>Hi there,</h3>
+                        <h1>user(@username)</h1>
+                    </div>
                 </div>
                 <div class="buttons">
                     <button>New</button>
@@ -40,46 +44,58 @@
         <div class="sidebar">
             <div class="dashboard">
                 <h1>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M13 9V3h8v6ZM3 13V3h8v10Zm10 8V11h8v10ZM3 21v-6h8v6Z"/></svg>
+                    <!-- Dashboard Icon -->
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 18"><path d="M13 9V3h8v6ZM3 13V3h8v10Zm10 8V11h8v10ZM3 21v-6h8v6Z"/></svg>
+                    </span>
                     Dashboard
                 </h1>
             </div>
             <ul class="links">
                 <li>
+                    <!-- Home Icon -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path  d="M10 20v-6h4v6h5v-8h3L12 3L2 12h3v8h5Z"/></svg>
                     Home 
                 </li>
                 <li>
+                    <!-- Profile Icon -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1792 1792"><path d="M896 0q182 0 348 71t286 191t191 286t71 348q0 181-70.5 347T1531 1529t-286 191.5t-349 71.5t-349-71t-285.5-191.5t-190.5-286T0 896t71-348t191-286T548 71T896 0zm619 1351q149-205 149-455q0-156-61-298t-164-245t-245-164t-298-61t-298 61t-245 164t-164 245t-61 298q0 250 149 455q66-327 306-327q131 128 313 128t313-128q240 0 306 327zm-235-647q0-159-112.5-271.5T896 320T624.5 432.5T512 704t112.5 271.5T896 1088t271.5-112.5T1280 704z"/></svg>
                     Profile 
                 </li>
                 <li>
+                    <!-- Messages Icon -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"><path d="M511.1 63.1v287.1c0 35.25-28.75 63.1-64 63.1h-144l-124.9 93.68c-7.875 5.75-19.12.05-19.12-9.7V413.3h-96c-35.25 0-64-28.75-64-63.1V63.1c0-35.25 28.75-63.1 64-63.1h384c36.12 0 64.02 28.75 64.02 63.1z"/></svg>
                     Messages 
                 </li>
                 <li>
+                    <!-- History Icon -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1536 1536"><path d="M1536 768q0 156-61 298t-164 245t-245 164t-298 61q-172 0-327-72.5T177 1259q-7-10-6.5-22.5t8.5-20.5l137-138q10-9 25-9q16 2 23 12q73 95 179 147t225 52q104 0 198.5-40.5T1130 1130t109.5-163.5T1280 768t-40.5-198.5T1130 406T966.5 296.5T768 256q-98 0-188 35.5T420 393l137 138q31 30 14 69q-17 40-59 40H64q-26 0-45-19T0 576V128q0-42 40-59q39-17 69 14l130 129Q346 111 483.5 55.5T768 0q156 0 298 61t245 164t164 245t61 298zM896 480v448q0 14-9 23t-23 9H544q-14 0-23-9t-9-23v-64q0-14 9-23t23-9h224V480q0-14 9-23t23-9h64q14 0 23 9t9 23z"/></svg>
                     History
                 </li>
                 <li>
+                    <!-- Tasks Icon -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="1.28em" height="1em" viewBox="0 0 1792 1408"><path d="M1024 1280h640v-128h-640v128zM640 768h1024V640H640v128zm640-512h384V128h-384v128zm512 832v256q0 26-19 45t-45 19H64q-26 0-45-19t-19-45v-256q0-26 19-45t45-19h1664q26 0 45 19t19 45zm0-512v256q0 26-19 45t-45 19H64q-26 0-45-19T0 832V576q0-26 19-45t45-19h1664q26 0 45 19t19 45zm0-512v256q0 26-19 45t-45 19H64q-26 0-45-19T0 320V64q0-26 19-45T64 0h1664q26 0 45 19t19 45z"/></svg>
                     Tasks
                 </li>
                 <li>
+                    <!-- Communities Icon -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="1.25em" height="1em"  viewBox="0 0 640 512"><path d="M224 256c70.7 0 128-57.31 128-128S294.7 0 224 0S96 57.31 96 128s57.3 128 128 128zm50.7 48H173.3C77.57 304 0 381.6 0 477.3C0 496.5 15.52 512 34.66 512H413.3c19.2 0 34.7-15.5 34.7-34.7c0-95.7-77.6-173.3-173.3-173.3zm204.4 16h-73.85C451.2 357.7 480 414.1 480 477.3c0 12.8-3.8 24.6-10 34.7h138c17.7 0 32-14.4 32-32.9c0-87.5-71.6-159.1-160.9-159.1zM432 256c61.9 0 112-50.1 112-112S493.9 32 432 32c-25.11 0-48.04 8.555-66.72 22.51C376.8 76.63 384 101.4 384 128c0 35.52-11.93 68.14-31.59 94.71C372.7 243.2 400.8 256 432 256z"/></svg>
                     Communities 
                 </li>
             </ul>
             <ul class="links">
                 <li>
+                    <!-- Settings Icon -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="m9.25 22l-.4-3.2q-.325-.125-.612-.3q-.288-.175-.563-.375L4.7 19.375l-2.75-4.75l2.575-1.95Q4.5 12.5 4.5 12.337v-.675q0-.162.025-.337L1.95 9.375l2.75-4.75l2.975 1.25q.275-.2.575-.375q.3-.175.6-.3l.4-3.2h5.5l.4 3.2q.325.125.613.3q.287.175.562.375l2.975-1.25l2.75 4.75l-2.575 1.95q.025.175.025.337v.675q0 .163-.05.338l2.575 1.95l-2.75 4.75l-2.95-1.25q-.275.2-.575.375q-.3.175-.6.3l-.4 3.2Zm2.8-6.5q1.45 0 2.475-1.025Q15.55 13.45 15.55 12q0-1.45-1.025-2.475Q13.5 8.5 12.05 8.5q-1.475 0-2.488 1.025Q8.55 10.55 8.55 12q0 1.45 1.012 2.475Q10.575 15.5 12.05 15.5Z"/></svg>
                     Settings 
                 </li>
                 <li>
+                    <!-- Support Icon -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="m12 22l-.25-3h-.25q-3.55 0-6.025-2.475Q3 14.05 3 10.5q0-3.55 2.475-6.025Q7.95 2 11.5 2q1.775 0 3.312.662q1.538.663 2.701 1.825q1.162 1.163 1.824 2.7Q20 8.725 20 10.5q0 3.8-2.275 6.812Q15.45 20.325 12 22Zm-.525-6.025q.425 0 .725-.3t.3-.725q0-.425-.3-.725t-.725-.3q-.425 0-.725.3t-.3.725q0 .425.3.725t.725.3ZM10.75 12.8h1.5q0-.75.15-1.05q.15-.3.95-1.1q.45-.45.75-.975q.3-.525.3-1.125q0-1.275-.862-1.913Q12.675 6 11.5 6q-1.1 0-1.85.612Q8.9 7.225 8.6 8.1l1.4.55q.125-.425.475-.838q.35-.412 1.025-.412q.675 0 1.013.375q.337.375.337.825q0 .425-.25.762q-.25.338-.6.688q-.875.75-1.062 1.187q-.188.438-.188 1.563Z"/></svg>
                     Support 
                 </li>
                 <li>
+                    <!-- Privacy Icon -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M11 17h2v-6h-2Zm1-8q.425 0 .713-.288Q13 8.425 13 8t-.287-.713Q12.425 7 12 7t-.712.287Q11 7.575 11 8t.288.712Q11.575 9 12 9Zm0 13q-3.475-.875-5.737-3.988Q4 14.9 4 11.1V5l8-3l8 3v6.1q0 3.8-2.262 6.912Q15.475 21.125 12 22Z"/></svg> 
                     Privacy
                 </li>
@@ -87,7 +103,7 @@
         </div>
         <main class="content">
             <div class="projects">
-                <h2>projects</h2>
+                <h2>your projects</h2>
                 <div class="card-grid">
                     <div class="card">
                         <h3>project name</h3>
@@ -184,25 +200,33 @@
                 <div class="trending">
                     <h2>trending</h2>
                     <div class="user">
-                        <div class="user1">
-                            <span>user1 logo</span>
-                            <h3>@user1</h3>
-                            <h4>app created</h4>
+                        <div class="trend user1">
+                            <div class="pic"></div>
+                            <div class="account">
+                                <h3>@user1</h3>
+                                <h4>app created</h4>
+                            </div>
                         </div>
-                        <div class="user2">
-                            <span>user2 logo</span>
-                            <h3>@user2</h3>
-                            <h4>app created</h4>
+                        <div class="trend user2">
+                            <div class="pic"></div>
+                            <div class="account">
+                                <h3>@user2</h3>
+                                <h4>app created</h4>
+                            </div>
                         </div>
-                        <div class="user3">
-                            <span>user3 logo</span>
-                            <h3>@user3</h3>
-                            <h4>app created</h4>
+                        <div class="trend user3">
+                            <div class="pic"></div>
+                            <div class="account">
+                                <h3>@user3</h3>
+                                <h4>app created</h4>
+                            </div>
                         </div>
-                        <div class="user4">
-                            <span>user4 logo</span>
-                            <h3>@user4</h3>
-                            <h4>app created</h4>
+                        <div class="trend user4">
+                            <div class="pic"></div>
+                            <div class="account">
+                                <h3>@user4</h3>
+                                <h4>app created</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
