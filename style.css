@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 :root {
     --avatar1: url(./images/hacker-avatar.jpg);
     --avatar2: url(./images/man-avatar.jpg);
     --avatar3: url(./images/man2-avatar.jpg);
     --avatar4: url(./images/man3-avatar.jpg);
+    --profile-yellow: #ffaf32;
+    --sidebar-blue: #3b87c9;
+    --gray-1: #fafaf9;
+    --gray-2: #e7e5e4;
+    --gray-para: #262626;
+    --gray-4: #27272A;
+    --gray-shadow: #78716c;
 }
 
 * {
@@ -16,12 +25,15 @@
     grid-template-rows: min-content 1fr;
     grid-template-areas: 
         "sidebar header"
-        "sidebar content";
+        "sidebar content"
+        "sidebar footer";
+    font-family: "Roboto";
 }
 
 .header {
     grid-area: header;
-    padding: 20px 70px 20px 50px;
+    padding: 20px 70px 10px 50px;
+    color: var(--gray-4);
 }
 
 .top,
@@ -35,6 +47,7 @@
 .notif {
     display: flex;
     gap: 1em;
+    font-weight: 600;
     font-size: 20px;
     align-items: center;
     padding: 5px;
@@ -43,7 +56,7 @@
 .search input {
     border: none;
     font-size: 20px;
-    background-color: #dfdfdf;
+    background-color: var(--gray-2);
     border-radius: 10px;
     width: 600px;
 }
@@ -69,7 +82,10 @@
 button {
   border: none;
   border-radius: 100px;
+  background-color: var(--sidebar-blue);
+  color: var(--gray-1);
   font-size: 14px;
+  font-weight: 700;
   width: 100px;
   padding: 8px 20px;
   text-align: center;
@@ -84,20 +100,25 @@ button {
 
 .greeting .pic {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     background-image: var(--avatar1);
     background-size: cover;
 }
 
-.greeting span,
-.user span {
-    grid-row: span 2;
+.greeting h1{
+    font-size: 1.6rem;
+}
+
+.greeting h3{
+    font-size: 1rem;
 }
 
 .sidebar {
     grid-area: sidebar;
     padding: 20px 40px;
+    background-color: var(--sidebar-blue);
+    color: var(--gray-1);
 }
 
 ul {
@@ -109,6 +130,7 @@ ul {
     align-items: center;
     font-size: 1.75rem;
     gap: 0.5em;
+    fill: white;
 }
 
 .dashboard,
@@ -119,20 +141,32 @@ ul {
 .links li {
     display: flex;
     gap: 1.5em;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 12px;
+    fill: rgb(248, 248, 246)
 }
 
 .content {
     grid-area: content;
+    background-color: var(--gray-2);
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr auto;
     grid-template-rows: min-content 1fr;
     grid-template-areas: 
         "projects announcements"
         "projects trending";
     gap: 2em;
-    padding: 20px 40px 50px 20px;
+    padding: 30px 40px 50px 30px;
+}
+
+.content h2 {
+    color: var(--gray-4);
+    margin-bottom: 15px;
+}
+
+.content h3 {
+    font-weight: 600;
+    color: var(--gray-4);
 }
 
 .card-grid {
@@ -144,26 +178,63 @@ ul {
 }
 
 .card {
-    border: 2px solid black;
+    background-color: #fff;
     border-radius: 5px;
     padding: 20px;
+    box-shadow: 0px 5px 10px var(--gray-shadow);
+}
+
+.card-grid .card {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    padding-top: 40px;
+    gap: 1.8em;
+    border-left: 10px solid var(--profile-yellow);
+}
+
+.card-grid .card p {
+    color: var(--gray-para);
+    font-size: 1frem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .project-icon {
     display: flex;
+    font-size: 1.2rem;
     gap: 1em;
     justify-content: flex-end;
 }
 
 .announcements {
     grid-area: announcements;
+    width: 32ch;
     margin-bottom: 30px;
 }
 
-.announcements .announce {
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 20px;
+.announce {
+    padding: 15px 0px;
+}
+
+.announce h3,
+.trending h3 {
+    font-size: 1rem;
+}
+
+.announce p {
+    color: var(--gray-para);
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.announce:nth-child(2),
+.announce:nth-child(3){
+    border-top: 2px solid #e7e5e4;
 }
 
 .trending {
@@ -174,6 +245,18 @@ ul {
     border-radius: 50%;
     width: 50px;
     height: 50px;
+}
+
+.trending .user {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.account span {
+    font-size: 0.9rem;
 }
 
 .user1 .pic {
@@ -196,9 +279,16 @@ ul {
     background-size: cover;
 }
 
-.trending .user {
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 20px;
+footer {
+    grid-area: footer;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--gray-2);
+    color: var(--gray-para);
 }
 
+footer a {
+    text-decoration: none;
+    color: var(--gray-para);
+}
